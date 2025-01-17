@@ -1,0 +1,7 @@
+CREATE TABLE cadastros(
+  id SERIAL,
+  nome VARCHAR(100) NOT NULL,
+  cpf VARCHAR(11) NOT NULL,
+
+  PRIMARY KEY (id)
+);
