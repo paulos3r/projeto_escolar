@@ -9,7 +9,7 @@ public class Aluno {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   @Enumerated(EnumType.STRING)
-  private Status ativo;
+  private Status status;
   @OneToOne
   private Cadastro cadastro;
 }
