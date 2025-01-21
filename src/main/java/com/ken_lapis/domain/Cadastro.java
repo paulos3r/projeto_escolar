@@ -28,6 +28,18 @@ public class Cadastro {
     this.nome = cadastro.nome();
   }
 
+  public long getId() {
+    return id;
+  }
+
+  public String getNome() {
+    return nome;
+  }
+
+  public String getCpf() {
+    return cpf;
+  }
+
   @Override
   public String toString() {
     return "Cadastro{" +

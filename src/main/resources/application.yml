@@ -3,9 +3,10 @@ spring:
     name: ken_lapis
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: create-drop
-      order_inserts: true
+    format-sql: true
+#    hibernate:
+#      ddl-auto: create
+#      order_inserts: true
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/ken_lapis
