@@ -24,8 +24,8 @@ public class Cadastro {
   }
 
   public Cadastro(CadastroDTO cadastro) {
-    this.cpf = cadastro.cpf();
     this.nome = cadastro.nome();
+    this.cpf = cadastro.cpf();
   }
 
   public long getId() {

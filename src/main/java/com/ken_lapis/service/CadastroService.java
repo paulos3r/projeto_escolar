@@ -18,4 +18,17 @@ public class CadastroService {
     return repository.findAll().stream().map(CadastroDTO::new).toList();
 
   }
+
+  public void cadastrar(CadastroDTO dto) {
+
+    if (dto.nome().isEmpty()){
+      throw new RuntimeException("nome nao existe");
+    }
+    if (dto.cpf().isEmpty()){
+      throw new RuntimeException("cpf nao existe");
+    }
+    Cadastro cadastro = new Cadastro(dto);
+
+    repository.save(cadastro);
+  }
 }
